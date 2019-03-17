@@ -68,6 +68,54 @@ abstract class AppsActivity extends Activity implements Activities {
             String appName = (String) resolver.loadLabel(packageManager);
             if (appName.equals("Light Android Launcher"))
                 continue;
+            // Favorites
+            if (appName.equals("Signal"))
+                continue;
+            if (appName.equals("Email"))
+                continue;
+            if (appName.equals("Etar"))
+                continue;
+            if (appName.equals("Fennec F-Droid"))
+                continue;
+            if (appName.equals("Notes"))
+                continue;
+            // Reachable elsewhere
+            if (appName.equals("Book Reader"))
+                continue;
+            if (appName.equals("Camera"))
+                continue;
+            if (appName.equals("Clock"))
+                continue;
+            if (appName.equals("DAVx⁵"))
+                continue;
+            if (appName.equals("Phone"))
+                continue;
+            if (appName.equals("Settings"))
+                continue;
+            // Useless tools
+            if (appName.equals("AudioFX"))
+                continue;
+            if (appName.equals("Calibration"))
+                continue;
+            if (appName.equals("Files"))
+                continue;
+            if (appName.equals("FM Radio"))
+                continue;
+            if (appName.equals("Messaging"))
+                continue;
+            if (appName.equals("Recorder"))
+                continue;
+            if (appName.equals("SIM Toolkit"))
+                continue;
+            // Keep app stores out of reach
+            if (appName.equals("F-Droid"))
+                continue;
+            if (appName.equals("Aurora Store"))
+                continue;
+            if (appName.equals("Yalp Store"))
+                continue;
+            if (appName.equals("Play Store"))
+                continue;
             adapter.add(appName);
             packageNames.add(resolver.activityInfo.packageName);
         }
